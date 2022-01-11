@@ -17,12 +17,5 @@ if __name__ == '__main__':
     meal_cost = float(input())
     tip_percent = int(input())
     tax_percent = int(input())
-    # float(meal_cost)
-    # int(tip_percent)
-    # int(tax_percent)
 
-    print (meal_cost, tip_percent, tax_percent)
-    print (1+float(tip_percent/100.00)+float(tax_percent/100.00))
-    print (float(tip_percent/100.00))
-    print (float(tax_percent/100.00))
     solve(meal_cost, tip_percent, tax_percent)
