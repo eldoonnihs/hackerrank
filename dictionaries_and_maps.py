@@ -6,8 +6,11 @@ for i in range(t):
     dict[txt[0]] = txt[1]
 
 for i in range(t):
-    key = str(input())
-    if (key in dict):
-        print(key,"=",dict[key],sep="")
-    else:
-        print("Not found")
+    try:
+        key = str(input())
+        if (key in dict):
+            print(key,"=",dict[key],sep="")
+        else:
+            print("Not found")
+    except EOFError as e:
+        print(e)
